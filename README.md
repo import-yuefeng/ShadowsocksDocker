@@ -1,4 +1,5 @@
-# README
+# 为翻越长城做的小小贡献-基于docker和shell的全自动shadowsock服务端安装指南
+
 这是一个基于docker和shell脚本的shadowsocks自动安装程序。
 暂时，你需要一个>=14.04+的Ubuntu的系统来使用它。
 
@@ -7,7 +8,7 @@
 ## 快速开始
 ```
 // 首先请clone项目代码
-# git clone https://
+# git clone https://github.com/import-yuefeng/ShadowsocksDocker
 
 # cd ShadowsocksDocker
 
@@ -28,16 +29,24 @@
 ## 使用docker
 ```
 // 接下来的内容讲解如何使用下载的docker镜像
+
 # docker -p 1289:1289 -d catone/shadowsocks:0.0.1 -s 0.0.0.0 -p 1289 -k yourpasswd -m rc4-md5
 
 // 对于参数的解释，第一个p参数是指定宿主机的访问docker容器的映射端口和对接的docker容器端口，也就是shadowsocks端口。
 // 一般可以设成一样的。
+
 // -d表示docker镜像可以在后端运行，不需要修改
+
 // catone/shadowsocks:0.0.1 表示从docker hub pull的镜像，不需要修改
+
 // -s 选项表示shadowsocks启动
+
 // -p 就是映射的docker容器端口，与前面的相同即可
+
 // -k 就是你的shadowsocks密码
+
 // -m 就是你选择的数据传输加密方式
+
 ```
 
 
