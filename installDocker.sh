@@ -34,7 +34,7 @@ sudo apt-get update
 sudo apt-get install -y docker-ce
 
 echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-echo >恭喜，如果没有错误，证明docker 安装完成！>
+echo 恭喜，如果没有错误，证明docker 安装完成！
 echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 echo Please select your Ubuntu version
