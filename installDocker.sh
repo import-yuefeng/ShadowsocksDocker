@@ -33,12 +33,13 @@ sudo apt-get update
 
 sudo apt-get install -y docker-ce
 
-echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-echo 恭喜，如果没有错误，证明docker 安装完成！
-echo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+echo '>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>'
+echo '恭喜，如果没有错误，证明docker 安装完成！'
+echo '>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>'
 
-echo Please select your Ubuntu version
-echo 1. 14.04 \n 2. 16.04+
+echo 'Please select your Ubuntu version'
+echo '1. 14.04 \n2. 16.04+'
+
 read yourSelect
 if test $[yourSelect] -eq 1; then
     sudo service docker start
@@ -50,6 +51,7 @@ else
 echo 请确认你的docker是否有输出版本信息，如果有则证明安装完成，否则安装失败！请手动调试！
 
 sudo docker --version
+
 
 
 
