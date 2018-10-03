@@ -4,7 +4,8 @@ RUN apt-get update
 RUN apt-get install -y python-pip
 RUN pip install shadowsocks
 EXPOSE 433
-ENTRYPOINT ["ssserver"]
-
+RUN mkdir -p /etc/shadowsocks/
+# ENTRYPOINT ["ssserver"]
+# CMD ssserver -c /etc/shadowsocks/shadowsocks.json
 
 
