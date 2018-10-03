@@ -6,6 +6,6 @@ RUN pip install shadowsocks
 EXPOSE 433
 RUN mkdir -p /etc/shadowsocks/
 # ENTRYPOINT ["ssserver"]
-# CMD ssserver -c /etc/shadowsocks/shadowsocks.json
+CMD ssserver -c /etc/shadowsocks/shadowsocks.json
 
 
