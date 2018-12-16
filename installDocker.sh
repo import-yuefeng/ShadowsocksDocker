@@ -40,16 +40,15 @@ echo "1. 14.04 | 2. 16.04+"
 
 read yourSelect
 
-if test $[yourSelect] -eq 1; then
+if test $(yourSelect) -eq "1"; then
     sudo service docker start
-else if test $[yourSelect] -eq 2; then
+else if test $(yourSelect) -eq "2"; then
     sudo systemctl start docker
 else
     echo 错误输入！
 
 fi
 
-unzip shadowsocks.zip
 
 echo 请确认你的docker是否有输出版本信息，此外请检查是否有启动docker hello world镜像。如果有则证明安装完成，否则安装失败！请手动调试！
 

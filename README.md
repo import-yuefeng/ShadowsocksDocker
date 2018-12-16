@@ -30,7 +30,7 @@
 ```
 // 接下来的内容讲解如何使用下载的docker镜像
 
-# docker -p 1289:1289 -d catone/shadowsocks:0.0.1 -s 0.0.0.0 -p 1289 -k yourpasswd -m rc4-md5
+# docker run -p 1289:1289 -d catone/shadowsocks:0.0.1 -s 0.0.0.0 -p 1289 -k yourpasswd -m rc4-md5
 
 // 对于参数的解释，第一个p参数是指定宿主机的访问docker容器的映射端口和对接的docker容器端口，也就是shadowsocks端口。
 // 一般可以设成一样的。
