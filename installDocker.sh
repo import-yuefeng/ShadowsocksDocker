@@ -40,13 +40,14 @@ echo "1. 14.04 | 2. 16.04+"
 
 read yourSelect
 
-if test $(yourSelect) -eq "1"; then
+if [[ $yourSelect == "1" ]] ; then
+    echo "service docker start"
     sudo service docker start
-else if test $(yourSelect) -eq "2"; then
+elif [[ $yourSelect == "2" ]] ; then
+    echo "systemctl start docker"
     sudo systemctl start docker
 else
     echo 错误输入！
-
 fi
 
 
