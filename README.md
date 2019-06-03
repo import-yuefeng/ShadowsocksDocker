@@ -35,7 +35,7 @@
 // catone/shadowsocks 原版
 # docker run -p 1289:1289 -d catone/shadowsocks:libev_1 ss-server -s 0.0.0.0 -p 1289 -k yourpasswd -m rc4-md5
 // shadowsocks libev 版本
-# docker run -p 1289:1289 -d catone/shadowsocks:alpine.1 shadowsocks -s 0.0.0.0 -p 1289 -k yourpasswd -m rc4-md5
+# docker run -p 1289:1289 -d catone/shadowsocks:alpine.1 ssserver -s 0.0.0.0 -p 1289 -k yourpasswd -m rc4-md5
 // docker image 体积最小
 
 // 对于参数的解释，第一个p参数是指定宿主机的访问docker容器的映射端口和对接的docker容器端口，也就是shadowsocks端口。
