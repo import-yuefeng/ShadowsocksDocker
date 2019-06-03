@@ -7,5 +7,5 @@ RUN apk update && apk add python3 python3-dev && \
     pip3 install shadowsocks && \
     ln -s /usr/lib/python3.6/site-packages/shadowsocks/server.py  shadowsocks
 
-CMD ["shadowsocks"]
+CMD ["ssserver", "-s", "0.0.0.0", "-p", "1289", "-k", "yourpasswd", "-m", "rc4-md5"]
 
